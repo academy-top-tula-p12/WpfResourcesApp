@@ -40,7 +40,17 @@
         <!--<ListBox ItemsSource="{StaticResource list}"/>-->
         <Button Height="100"
                 Background="{StaticResource brush}"/>
-        <Button Height="100"
-            Background="{DynamicResource brush}"/>
+        <Button Height="100">
+            <Button.Background>
+                <DynamicResource ResourceKey="brush"/>
+            </Button.Background>
+            <!--Background="{DynamicResource brush}"/>-->
+        </Button>
+        <Button>
+            <Button.Resources>
+                <ResourceDictionary Source="AppDictionary.xaml" />
+            </Button.Resources>
+        </Button>
+            
     </StackPanel>
 </Window>

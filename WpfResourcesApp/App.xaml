@@ -4,6 +4,12 @@
              xmlns:local="clr-namespace:WpfResourcesApp"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="AppDictionary.xaml"/>
+                <!--<ResourceDictionary Source="ColorDictionary.xaml"/>-->
+                <!--<SolidColorBrush x:Key="brushAqua" Color="Aqua" />-->
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
